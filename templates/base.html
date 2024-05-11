@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}Todo-App{% endblock %}</title>
+        <link rel=stylesheet type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <div class="navbar">
+            <ul class="navlist">
+                <li class="navitem"><a href="/" class="navcontent">🏠Home</a></li>
+                <li class="navitem"><a href="/howto" class="navcontent">📓How To</a></li>
+                <li class="navitem"><a href="/about" class="navcontent">🤵About</a></li>
+            </ul>
+        </div>
+        {% block content %} 
+        {% endblock %}
+    </body>
+
+</html>
